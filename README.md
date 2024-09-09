@@ -3,7 +3,9 @@
 
 This repo demonstrate how to set up a chat bot from your local terminal (Mac/Linux) with openai 3.5 model, you still need to pay for to openai to get chat quotes but it is generally much cheapter compared to the monthly subscription if you are not a heavy user. The openai api will be wrapped in the flask app builder in a remote Oracle free tier server (or locally).
 
-<img width="511" alt="image" src="https://github.com/user-attachments/assets/211c2e75-cdc3-4f19-85c3-40b35ee9ebd1">
+<div align="center">
+  <img width="511" alt="image" src="https://github.com/user-attachments/assets/211c2e75-cdc3-4f19-85c3-40b35ee9ebd1">
+</div>
 
 
 ## Step 0: (optional) get a free VPS, my choice is Oracle Free Tier 
