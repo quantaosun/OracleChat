@@ -15,7 +15,7 @@ Username:
 ```
 You will get a key file when setting up your remote server, something like ```ssh-key-2024-09-09.key```
 
-If you don't want to use remote server, you can proceed with your Mac/Linx, no Windows in this repo.
+### If you don't want to use remote server, you can proceed with your Mac/Linx, no Windows tutorial here, it is also possible but not introduced here.
 
 ## Step 1 Set Up a Virtual Environment
 ### Create a project directory
@@ -114,7 +114,18 @@ python app.py
 
 ```
 ## Step6. Automatically Activate the Virtual Environment
-If you want the virtual environment to activate automatically every time you log into the server or open a new shell, you can add the following line to your .bashrc:
+If you want the virtual environment to activate automatically every time you log into the server or open a new shell, you can add the following line to your ```~/.bashrc```
+
+Add these lines to the end of the file, change the path if yours is different
+
+```
+source ~/my_chatbot/venv/bin/activate
+cd /home/ubuntu/my_chatbot
+# start flask app 
+python app.py
+```
+restart the shell or close and reopen
+
 ```
 source ~/my_chatbot/venv/bin/activate
 ```
@@ -122,3 +133,4 @@ source ~/my_chatbot/venv/bin/activate
 ```
 ssh -i ssh-key-2024-09-09.key ubuntu@ 1**.1**.1**.2** 
 ```
+Since we have added ```python app.py``` to the end of ```~/.bashrc```, as long as you can connect to Oracle, it will enter the chatbot by default.
